@@ -7,7 +7,8 @@ return false;
 }
 function convertToF() {
 var cTemp = parsefloat(document.getElementById('cTemp').value);
-var fToFahr = (cTemp * (9/5)) + 32;
+var fTempVal = (cTemp * (9/5)) + 32;
 
-document.getElementById('fTemp').value = fToFahr;
+document.getElementById('fTemp').value = fTempVal ;
+return false;
 }
