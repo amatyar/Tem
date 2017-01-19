@@ -1,12 +1,13 @@
-function CelsiusToFahrenheit(Celsius) {
-var cTemp = celsius;
-var cToFahr = cTemp * 9/5 + 32;
-var answer = cTemp + " \xB0C is" + cToFahr + '\xB0F';
-document.getElementById('foo').innerHTML = answer;
+function convertToC() {
+var fTempVal = parsefloat(document.getElementById('fTemp').value);
+var cTempVal = (fTempVal - 32) * (5/9);
+
+document.getElementById('cTemp').value = cTempVal;
+return false;
 }
-function FahrenheitToCelsius(Fahrenheit) {
-var cTemp = celsius;
-var cToFahr = cTemp * 9/5 + 32;
-var answer = cTemp + " \xB0C is" + cToFahr + '\xB0F';
-document.getElementById('foo').innerHTML = answer;
+function convertToF() {
+var cTemp = parsefloat(document.getElementById('cTemp').value);
+var fToFahr = (cTemp * (9/5)) + 32;
+
+document.getElementById('fTemp').value = fToFahr;
 }

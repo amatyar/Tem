@@ -5,27 +5,32 @@
     <title>Fahrenheit and Centigrade temperatures</title>
   </head>
   <body>
-    
-    <h2> Tempature convert form different ways</h2>
-    <div id="foo"></div>
-    <form>
-    Celsius<input type="text" id="Celsius" />  To
-    Fahrenheit<input type="text" id="Fahrenheit" /><br><br>
-    <input  type="button" onclick="CelsiusToFah"  value="CelsiusToFah"/><br>
-    <p> The Result is : <br>
-      <span id="result"></span>
-    </p>
-<hr>
-<br>
-Celsius<input type="text" id="Celsius" />  To
-Fahrenheit <input type="text" id="Fahrenheit" /><br><br>
-<input type="button" onclick="FahrenheitToCel" value="FahrenheitToCel" /><br>
-<p> The Result is : <br>
-  <span id="result"></span>
-</p>
-    </form>
 
+    <form name="conversionForm">
+      <table border="2">
+          <tbody>
+              <tr>
+                  <td>Fahrenheit</td>
+                  <td>
+                      <input name="fTemp" id="fTemp" type="text" />
+                  </td>
+                  <td>
+                      <button type="button" onclick="convertToC();return false">Convert to Celsius</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>Celsius</td>
+                  <td>
+                      <input name="cTemp" id="cTemp" type="text" />
+                  </td>
+                  <td>
+                      <button type="button" onclick="convertToF();return false">Convert to Fahrenheit</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </form>
 
   </body>
-  <script src="scripts/code.js" language="javascript"></script>
+
 </html>
